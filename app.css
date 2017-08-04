@@ -1,0 +1,293 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Playfair';
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.grey {
+  color: grey;
+}
+
+.row {
+    margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  padding-top: 4em;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4em;
+  width: 100%;
+}
+
+.logo {
+  border: 1px solid black;
+}
+
+.wrapper .navbar .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.wrapper .navbar .logo img {
+  height: 2em;
+  vertical-align: top;
+}
+
+.wrapper .navbar .logo span {
+  font-size: 135%;
+}
+
+.wrapper .navbar .links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.wrapper .navbar .links a {
+  padding: 1.5em;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.wrapper .hero {
+  padding: 3em;
+  position: relative;
+}
+
+.wrapper .hero .hero-image {
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper .hero .title {
+  position: relative;
+  text-align: center;
+}
+
+.wrapper .hero .title .main-title {
+  color: #ff623a;
+  font-size: 3em;
+  margin-bottom: 0.25em;
+}
+
+.wrapper .hero .title .subtitle {
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+.wrapper .section {
+  background-color: rgb(225,225,225);
+}
+
+.wrapper .section .hello-container,
+.wrapper .section .description-container {
+  padding: 2em;
+}
+
+.wrapper .section .hello-container {
+  text-align: center;
+}
+
+.wrapper .section .hello-container .hello {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.wrapper .section .description {
+  border: 2px solid black;
+  background-color: white;
+  padding: 1em;
+}
+
+.wrapper .work {
+    padding: 3em 0;
+}
+
+.wrapper .work .work-block {
+    padding: 0.5em;
+}
+
+.wrapper .work .name {
+    padding: 0.5em 2em 0.5em 0;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    position: relative;
+    font-size: 120%;
+}
+
+.wrapper .work .name a {
+    position: absolute;
+    right: 0;
+    bottom: 0.5em;
+}
+
+.wrapper .work .name a img {
+    width: 1.25em;
+}
+
+.wrapper .work .description {
+    padding: 1em 0;
+}
+
+.wrapper .projects {
+    padding: 2em 0;
+}
+
+.wrapper .projects .project-block {
+    padding: 0.5em;
+    height: 15em;
+    position: relative;
+}
+
+.wrapper .projects .project-block .image {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper .projects .project-block .cover {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    padding-top: 3.25em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    opacity: 0;
+    font-size: 150%;
+}
+
+.wrapper .projects .project-block .cover:hover {
+    opacity: 1;
+}
+
+.msft {
+    background-image: url('images/logos/msft.png');
+}
+
+.tesla {
+    background-image: url('images/logos/tesla.png');
+}
+
+.google {
+    background-image: url('images/logos/google.png');
+}
+
+.amazon {
+    background-image: url('images/logos/amazon.png');
+}
+
+.ge {
+    background-image: url('images/logos/ge.png');
+}
+
+.uber {
+    background-image: url('images/logos/uber.jpg');
+}
+
+.wrapper .talk {
+    padding: 3em 0.5em;
+}
+
+.wrapper .talk .row {
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.75em 0.5em;
+}
+
+.wrapper .talk .submit {
+    text-align: right;
+}
+
+.wrapper .talk .submit .submit-button {
+    background-color: #ff623a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height: 2.5em;
+    width: 100%;
+}
+
+.wrapper .footer {
+    text-align: center;
+    padding: 1.5em 0.5em;
+    border-top: 2px solid black;
+    font-size: 150%;
+}
+
+.wrapper .footer img {
+    width: 1em;
+}
+
+@media screen and (min-width: 700px) {
+    .wrapper .hero .hero-image {
+        display: inline;
+        margin: 0;
+    }
+
+    .wrapper .hero .title {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        text-align: left;
+    }
+
+    .wrapper .talk .submit .submit-button {
+        width: 6em;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .wrapper .section .hello-container {
+        text-align: right;
+    }
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('font/PlayfairDisplay-Bold.woff') format('woff'), /* Pretty Modern Browsers */ url('font/PlayfairDisplay-Bold.ttf') format('truetype'), /* Safari, Android, iOS */;
+}
+
